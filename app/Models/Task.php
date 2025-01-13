@@ -11,4 +11,10 @@ class Task extends Model
 
     // To enable mass assignment, we need to define the fillable property on the model.
     protected $fillable = ['title', 'description', 'long_description'];
+
+    public function toggleComplete()
+    {
+        $this->completed = !$this->completed;
+        $this->save();
+    }
 }

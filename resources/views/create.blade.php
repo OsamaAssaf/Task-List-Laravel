@@ -1,4 +1,6 @@
-@extends('layouts.app')
+@include('form')
+
+{{-- @extends('layouts.app')
 
 @section('title', 'Add new task')
 
@@ -13,7 +15,6 @@
 @endsection
 
 @section('content')
-    {{-- {{ $errors }} --}}
     <form method="POST" action="{{ route('tasks.store') }}">
         @csrf
         <div>
@@ -58,4 +59,4 @@
             <button type="submit">Add task</button>
         </div>
     </form>
-@endsection
+@endsection --}}
